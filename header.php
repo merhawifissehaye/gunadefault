@@ -35,8 +35,12 @@
         <div class="navbar">
             <ul class="navbar-nav nav navbar-left">
                 <li><a href="#">My Account</a></li>
-                <li><?php wp_loginout(); ?></li>
-                <li><a href="#">Register</a></li>
+                <?php if(is_user_logged_in()): ?>
+                    <li><a href="<?php echo get_site_url(); ?>/wp-admin">Dashboard</a></li>
+                    <li><a href="<?php echo wp_logout_url(get_site_url()); ?>">Logout</a></li>
+                <?php else: ?>
+                    <li><a href="<?php echo wp_login_url(); ?>">Login</a></li>
+                <?php endif; ?>
                 <li><a href="#">My Wishlist</a></li>
             </ul>
             <ul class="navbar-nav nav navbar-right">
