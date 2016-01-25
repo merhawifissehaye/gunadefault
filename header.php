@@ -68,10 +68,27 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#/">Home</a>
+                        <a href="<?php echo get_site_url() . '/'; ?>">Home</a>
                     </li>
-                    <li>
-                        <a href="#/about">About</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <i class="caret"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <ul>
+                                    <li class="dropdown-menu-header"><a class="text-center">General Information</a></li>
+                                    <li><a class="text-center" href="<?php echo get_site_url() . '/?page_id=47#establishment'; ?>">Establishment</a></li>
+                                    <li><a class="text-center" href="<?php echo get_site_url() . '/?page_id=47#vision'; ?>">Vision</a></li>
+                                    <li><a class="text-center" href="<?php echo get_site_url() . '/?page_id=47#mission'; ?>">Mission</a></li>
+                                    <li><a class="text-center" href="<?php echo get_site_url() . '/?page_id=47#values'; ?>">Values</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="dropdown-menu-header"><a class="text-center" href="#">Corporate Profile</a></li>
+                                    <li><a class="text-center" href="<?php echo get_site_url() . '/?page_id=23#values'; ?>">Corporate Profile</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <i class="caret"></i></a>
@@ -79,19 +96,19 @@
                             <li>
                                 <ul>
                                     <li class="dropdown-menu-header"><a class="text-center" href="#">Imports</a></li>
-                                    <li><a class="text-center" href="#service/#Imports">Import Products</a></li>
+                                    <li><a class="text-center" href="<?php echo get_site_url() . '/?page_id=50#imports'; ?>">Import Products</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <ul>
                                     <li class="dropdown-menu-header"><a class="text-center" href="#">Exports</a></li>
-                                    <li><a class="text-center" href="#service/#Exports">Export Products</a></li>
+                                    <li><a class="text-center" href="<?php echo get_site_url() . '/?page_id=50#exports'; ?>">Export Products</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <ul>
                                     <li class="dropdown-menu-header"><a class="text-center" href="#">Local Products</a></li>
-                                    <li><a class="text-center" href="#service/#Local">Local Products</a></li>
+                                    <li><a class="text-center" href="<?php echo get_site_url() . '/?page_id=50#local'; ?>">Local Products</a></li>
                                 </ul>
                             </li>
                             <li>
