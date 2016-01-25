@@ -1,3 +1,3 @@
 <?php get_header() ?>
-<?php wp_list_pages(); ?>
+This is a single page
 <?php get_footer() ?>

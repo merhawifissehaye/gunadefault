@@ -31,12 +31,11 @@
 
 <body>
 <div id="wrapper">
-    <?php menu ?>
     <section id="topper" class="hidden-xs">
         <div class="navbar">
             <ul class="navbar-nav nav navbar-left">
                 <li><a href="#">My Account</a></li>
-                <li><a href="#">Login</a></li>
+                <li><?php wp_loginout(); ?></li>
                 <li><a href="#">Register</a></li>
                 <li><a href="#">My Wishlist</a></li>
             </ul>
@@ -62,7 +61,6 @@
                 </button>
                 <a class="navbar-brand text-center" href="#">Guna</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>

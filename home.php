@@ -19,7 +19,7 @@
 <section id="services">
     <div><h1 class="section-title text-center"><a href="#services">What We Offer</a></h1></div>
     <?php
-        query_posts('category_name=services');
+        query_posts('category_name=Services');
         if(have_posts()) :
     ?>
     <div class="row">
